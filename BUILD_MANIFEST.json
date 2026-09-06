@@ -1,0 +1,15 @@
+{
+  "version": "5.0.0",
+  "questions": 650,
+  "platforms": [
+    "windows",
+    "macos",
+    "linux"
+  ],
+  "p2p": "PeerJS",
+  "history_per_room": 10,
+  "shuffle": "Fisher-Yates questions + Fisher-Yates options",
+  "answer_authority": "host",
+  "rematch": "same connection, same room",
+  "art": "original/procedural + generated promo"
+}

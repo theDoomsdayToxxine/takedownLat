@@ -1,0 +1,67 @@
+{
+  "name": "medical-deathmatch-studio",
+  "version": "5.0.0",
+  "description": "Medical Deathmatch — trivia médica P2P de alto nivel visual",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis --mac dmg --linux AppImage",
+    "dist:win": "electron-builder --win nsis portable",
+    "dist:linux": "electron-builder --linux AppImage",
+    "dist:mac": "electron-builder --mac dmg"
+  },
+  "devDependencies": {
+    "electron": "^40.0.0",
+    "electron-builder": "^26.7.0"
+  },
+  "build": {
+    "appId": "com.dolaet.medicaldeathmatch",
+    "productName": "Medical Deathmatch",
+    "files": [
+      "index.html",
+      "styles.css",
+      "app.js",
+      "src/**/*",
+      "data/**/*",
+      "main.js",
+      "assets/**/*"
+    ],
+    "asar": true,
+    "artifactName": "Medical-Deathmatch-${version}-${arch}.${ext}",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.games"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Game"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "type": "module"
+}

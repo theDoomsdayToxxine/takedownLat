@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MEDICAL DEATHMATCH — Studio Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="app">
+  <div class="scanlines"></div>
+  <section id="screen-splash" class="screen active">
+    <div class="ruin-bg"></div><div class="chains"></div><div class="ember-field"></div>
+    <div class="minotaur-skull"><div class="horn left"></div><div class="horn right"></div><div class="skull-eye e1"></div><div class="skull-eye e2"></div></div>
+    <div class="title-wrap"><div class="small-title">BY DO LÆT • STUDIO EDITION</div><h1>MEDICAL<br><span>DEATHMATCH</span></h1><div class="tag">EL CONOCIMIENTO ES TU ARMA</div></div>
+    <div class="splash-actions"><button id="btn-enter">ENTRAR A LA ARENA</button><div class="splash-note">TRIVIA MÉDICA • P2P • 650 PREGUNTAS • SIN REPETICIÓN</div></div>
+  </section>
+
+  <section id="screen-lobby" class="screen">
+    <div class="screen-head"><div><span class="eyebrow">P2P NETWORK</span><h2>FORJA TU SALA</h2></div><div class="build">v5.0.0</div></div>
+    <div class="lobby-grid">
+      <div class="lobby-card forge"><h3>CREAR SALA</h3><p>El anfitrión controla el estado del combate y valida las respuestas.</p><button id="btn-create">CREAR SALA</button><div class="room-code hidden" id="host-code"><span>ID DE SALA</span><strong id="host-id">—</strong><button id="btn-copy">COPIAR</button></div></div>
+      <div class="lobby-card join"><h3>UNIRSE</h3><p>Introduce el ID de sala que te compartió tu rival.</p><input id="join-id" placeholder="PEER ID" autocomplete="off"><button id="btn-join">UNIRME A LA SALA</button></div>
+      <div class="status-panel"><div class="status-dot" id="status-dot"></div><div><span>ESTADO</span><strong id="status-text">Desconectado</strong></div><div class="protocol">HOST-AUTHORITATIVE<br>REV MONOTÓNICA<br>REMATCH SIN RECARGA</div></div>
+    </div>
+  </section>
+
+  <section id="screen-select" class="screen">
+    <div class="select-head"><span class="eyebrow">SELECCIÓN</span><h2>ELIGE A TU GUERRERO</h2><span>AMBOS JUGADORES DEBEN CONFIRMAR</span></div>
+    <div class="roster" id="roster"></div>
+    <div class="select-bottom"><div class="ready readyl" id="p1-ready">JUGADOR 1 · EN ESPERA</div><div class="ready" id="p2-ready">JUGADOR 2 · EN ESPERA</div><button id="btn-confirm" disabled>CONFIRMAR GUERRERO</button></div>
+  </section>
+
+  <section id="screen-battle" class="screen">
+    <header class="battle-hud">
+      <div class="fighter-hud left"><b id="hud-p1-name">P1</b><div class="hp"><i id="hp1"></i></div><span id="streak1">RACHA 0</span></div>
+      <div class="turn-orb"><span id="turn-label">TURNO</span><strong id="turn-name">P1</strong><em id="timer">30</em></div>
+      <div class="fighter-hud right"><b id="hud-p2-name">P2</b><div class="hp"><i id="hp2"></i></div><span id="streak2">RACHA 0</span></div>
+    </header>
+    <main class="battle-stage"><canvas id="arena" width="1280" height="620"></canvas><div id="combat-fx"></div></main>
+    <section class="question-panel"><div class="q-top"><span id="q-spec">CARDIOLOGÍA</span><span id="q-count">PREGUNTA</span></div><div class="q-body"><div><h3 id="q-text">Trae una pregunta para comenzar.</h3><div id="options" class="options"></div></div><aside class="q-evidence"><div class="ev-label">EVIDENCIA</div><p id="q-feedback">La bibliografía de la pregunta aparecerá cuando corresponda.</p><a id="q-source" href="#" target="_blank" rel="noopener">ABRIR FUENTE</a></aside></div><div class="q-actions"><button id="btn-ask">TRAER PREGUNTA</button><button id="btn-pass">PASAR TURNO</button></div></section>
+  </section>
+
+  <section id="screen-end" class="screen"><div class="end-backdrop"></div><div class="end-card"><span class="eyebrow">FIN DE COMBATE</span><h2 id="end-title">VICTORIA</h2><p id="end-sub">—</p><div id="end-evidence" class="end-evidence hidden"><b>FUENTE DE LA PREGUNTA DECISIVA</b><a id="end-source" href="#" target="_blank" rel="noopener">ABRIR BIBLIOGRAFÍA / DOI</a></div><div class="room-history"><div class="history-head"><b>HISTORIAL DE SALA</b><span>ÚLTIMAS 10</span></div><div id="history-list"></div></div><div class="end-actions"><button id="btn-rematch">REVANCHA</button><button id="btn-lobby">SALIR A LOBBY</button></div></div></section>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

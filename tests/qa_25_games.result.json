@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "bank": 650,
+  "fisherYatesPermutations": 250,
+  "sameRoomMatches": 25,
+  "historyFinal": 10,
+  "results": [
+    {
+      "game": 1,
+      "winner": "p1",
+      "questions": 8,
+      "history": 1,
+      "rematch": "OK"
+    },
+    {
+      "game": 2,
+      "winner": "p1",
+      "questions": 8,
+      "history": 2,
+      "rematch": "OK"
+    },
+    {
+      "game": 3,
+      "winner": "p2",
+      "questions": 8,
+      "history": 3,
+      "rematch": "OK"
+    },
+    {
+      "game": 4,
+      "winner": "p1",
+      "questions": 8,
+      "history": 4,
+      "rematch": "OK"
+    },
+    {
+      "game": 5,
+      "winner": "p2",
+      "questions": 8,
+      "history": 5,
+      "rematch": "OK"
+    },
+    {
+      "game": 6,
+      "winner": "p2",
+      "questions": 8,
+      "history": 6,
+      "rematch": "OK"
+    },
+    {
+      "game": 7,
+      "winner": "p1",
+      "questions": 8,
+      "history": 7,
+      "rematch": "OK"
+    },
+    {
+      "game": 8,
+      "winner": "p2",
+      "questions": 8,
+      "history": 8,
+      "rematch": "OK"
+    },
+    {
+      "game": 9,
+      "winner": "p2",
+      "questions": 8,
+      "history": 9,
+      "rematch": "OK"
+    },
+    {
+      "game": 10,
+      "winner": "p2",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 11,
+      "winner": "p2",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 12,
+      "winner": "p2",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 13,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 14,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 15,
+      "winner": "p2",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 16,
+      "winner": "p2",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 17,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 18,
+      "winner": "p2",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 19,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 20,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 21,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 22,
+      "winner": "p2",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 23,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 24,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    },
+    {
+      "game": 25,
+      "winner": "p1",
+      "questions": 8,
+      "history": 10,
+      "rematch": "OK"
+    }
+  ]
+}

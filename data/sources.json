@@ -1,0 +1,20 @@
+{
+  "cardio": "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/Atrial-Fibrillation",
+  "aha": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
+  "diabetes": "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Diagnosis-and-Classification-of-Diabetes",
+  "resp": "https://ginasthma.org/2026-gina-strategy-report/",
+  "renal": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+  "sti": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+  "tb": "https://www.who.int/teams/global-tuberculosis-programme/tb-reports",
+  "immuno": "https://www.cdc.gov/vaccines/schedules/",
+  "gi": "https://gi.org/guidelines/",
+  "heme": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines",
+  "rheum": "https://rheumatology.org/clinical-practice-guidelines",
+  "peds": "https://www.aap.org/en/patient-care/clinical-practice-guidelines/",
+  "neuro": "https://www.aan.com/Guidelines",
+  "psych": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines",
+  "obgyn": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin",
+  "derm": "https://www.aad.org/member/clinical-quality/guidelines",
+  "emergency": "https://www.aafp.org/pubs/afp/topics/by-topic.topicPar00.html",
+  "surgery": "https://www.facs.org/for-medical-professionals/resources-for-clinical-practice/"
+}
